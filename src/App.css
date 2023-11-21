@@ -1,0 +1,183 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
+
+*{
+    font-family: 'Red Hat Display', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+    
+.contentbody{
+   
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .summary{
+    
+    border-radius: .7em;
+
+    text-align: center;
+    
+}
+@media screen and (max-width:600px){
+    .summary{
+        width: 75%;
+    }
+}
+@media screen and (min-width:600px) and (max-width:900px) {
+    .summary{
+        width: 50%;
+    }
+}
+@media screen and (min-width:900px) {
+    .summary{
+        width: 25%;
+    }
+}
+
+button{
+    background-color: hsl(245, 100%, 25%);
+    color: rgb(255, 255, 255);
+    width: 12rem;
+    border: 0px;
+    border-radius: .3em;
+    font-size:medium;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.plan-change{
+   
+    display: flex;
+    width: 85%;
+    margin: auto;
+    border-radius: .3em;
+    justify-content: space-between;
+    font-size: small;
+    
+}
+
+
+.change{
+    background-color:inherit;
+    color: rgb(0, 0, 255);
+    padding: .5%;
+    
+}
+
+
+.detail{
+    text-align: center;
+    padding: 4%;
+}
+
+
+.detail h1{
+    padding: 2%;
+    margin-bottom: 3%;
+}
+
+
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    margin: 2%;
+}
+
+
+.proceed{
+    margin: 7%;
+   padding: 3%;
+    width: 80%;
+    box-shadow: .22px .22px 5px rgb(230, 8, 8);
+}
+.cancel{
+    
+   background-color: inherit;
+    padding: 2%;
+    margin-bottom: 6%;
+}
+
+.heroimg{
+    width: 100%;
+     border-top-left-radius: .7em;
+     border-top-right-radius: .7em;
+}
+
+
+
+.icon-music{
+    margin: 3%;
+}
+
+/*light theme design */
+
+.lighttheme{
+    
+            background-color:hsl(225, 100%, 98%) ;
+
+        .contentbody{
+
+        background-image: url(/images/pattern-background-desktop.svg);
+        }
+
+        .summary{
+        background-color: rgb(247, 247, 247);
+            color: rgb(5, 5, 5)    ;
+            box-shadow: .25px .25px 5px rgb(0, 0, 0);
+        }
+        .cancel{
+            color: rgb(13, 0, 160);
+        }
+
+
+        .plan-change{
+            background-color: rgb(240, 236, 236);
+        
+        }
+
+
+}
+
+/*dark theme design*/
+.darktheme{
+    
+background-color: black;
+            
+        .contentbody{
+        
+            background-color: hsl(0, 0%, 0%);
+            
+        }
+        .summary{
+            
+            background-color: rgb(31, 29, 29);
+            color: wheat    ;
+            box-shadow: .25px .25px 5px rgb(255, 254, 254);
+        }
+
+        .plan-change{
+            background-color: rgb(0, 0, 0);
+        
+            
+        }
+
+        .proceed{
+            
+            box-shadow: .22px .22px 5px rgb(255, 255, 255);
+        }
+
+        }
+        .cancel{
+            color: rgb(244, 239, 239);
+}
